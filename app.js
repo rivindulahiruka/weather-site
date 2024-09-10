@@ -26,7 +26,7 @@ window.onload = function() {
 };
 
 function getWeather(location) {
-    const weatherAPI = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
+    const weatherAPI = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
     
     fetch(weatherAPI)
         .then(res => res.json())
@@ -39,7 +39,7 @@ function getWeather(location) {
             currentCondition.textContent = `${data.current.condition.text}`;
             localTime.textContent = `${data.location.localtime}`;
 
-            const sunRiseAPI = `http://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${location}&days=3`;
+            const sunRiseAPI = `https://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${location}&days=3`;
             return fetch(sunRiseAPI);
         })
         .then(res => res.json())
@@ -48,7 +48,7 @@ function getWeather(location) {
 
 
            
-            const forecastAPI = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`;
+            const forecastAPI = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`;
             return fetch(forecastAPI);
         })
         .then(res => res.json())
