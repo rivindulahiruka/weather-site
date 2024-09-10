@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather appication</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Location" id="city-input">
+                <button id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+            </div>
+            <div class="current-weather">
+                <div class="location-info">
+
+                    <p>  <i class="fas fa-cloud-sun"></i>Current Location</p>
+                    <h2 id="current-location">Los Angeles, CA, USA</h2>
+                    </div>
+                    <div class="weather-info">
+                        <img src="img/pexels-chaitaastic-1796715 (1).jpg" alt="Golden Gate Bridge">
+                        <div class="temperature">
+                            <h1 id="temperature">12°C</h1>
+                            <p>Monday, 07:43 AM - Partly Cloudy</p>
+                        </div>
+                        <div class="add-city">
+                            <i class="fas fa-plus"></i>
+                            <p>Add City</p>
+                        </div>
+                    </div>
+                    <div class="highlights">
+                        <h3>Today's Highlight</h3>
+                        <div class="highlight-container">
+                            <div class="highlight-item">
+                                
+                                    <img src="img/wind-turbine (1).png" alt="">
+                               
+                                <div class="highlight-details">
+                                    <p >WIND</p>
+                                    <span id="wind">20 km/h</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                
+                                    <img src="img/cloudy (1).png" alt="">
+                                
+                                <div class="highlight-details">
+                                    <p >HUMIDITY</p>
+                                    <span id="humidity">87%</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                
+                                    <img src="img/icons8-sun-48.png" alt="">
+                                
+                                <div class="highlight-details">
+                                    <p >SUN RISE</p>
+                                    <span id="sunrise">6:38 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <div class="right-side">
+            
+            <div class="forecast-container">
+                <div class="forecast-header">
+                    <h3>Forecast</h3>
+                    <div class="forecast-buttons">
+                        <button class="active">3 days</button>
+                        
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="forecast-icon">
+                        <img id="fIcon" src="fas fa-cloud-sun" alt="">
+                    </div>
+                    <div class="forecast-temp">
+                        <p id="fTemp">+22°</p>
+                        <span id="fdate">16 May, Tue</span>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="forecast-icon">
+                        <img id="sIcon" alt="">
+                    </div>
+                    <div class="forecast-temp">
+                        <p id="sTemp">+20°</p>
+                        <span id="sdate">17 May, Wed</span>
+                    </div>
+                </div>
+                <div class="forecast-item">
+                    <div class="forecast-icon">
+                        <img id="tIcon" alt="">
+                    </div>
+                    <div class="forecast-temp">
+                        <p id="tTemp">+25°</p>
+                        <span id="tdate">18 May, Thu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wish">
+                <h1 id="current-temp">27°C</h1>
+                <p id="current-condition">Partly Cloudy</p>
+                <h3 id="local-time">2024-08-31 13:36</h3>
+            </div>
+            
+        </div>
+
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
